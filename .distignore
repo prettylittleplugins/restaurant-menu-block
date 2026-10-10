@@ -1,0 +1,25 @@
+# Excluded from the zip shipped to wordpress.org (used by `wp dist-archive` / plugin-zip).
+.git
+.github
+.gitignore
+.distignore
+.editorconfig
+.phpunit.result.cache
+node_modules
+vendor
+src
+tests
+composer.json
+composer.lock
+composer.phar
+package.json
+package-lock.json
+phpunit.xml
+webpack.config.js
+README.md
+*.zip
+*.log
+.vscode
+.idea
+.DS_Store
+Thumbs.db

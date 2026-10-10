@@ -1,0 +1,20 @@
+{
+  "name": "restaurant-menu-block",
+  "version": "0.1.0",
+  "description": "Restaurant Menu Block – with Allergen & Dietary Filters. WordPress plugin by Pretty Little Plugins.",
+  "author": "Pretty Little Plugins",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "scripts": {
+    "build": "wp-scripts build --experimental-modules --webpack-src-dir=src --blocks-manifest",
+    "start": "wp-scripts start --experimental-modules --webpack-src-dir=src --blocks-manifest",
+    "lint:js": "wp-scripts lint-js",
+    "lint:css": "wp-scripts lint-style",
+    "format": "wp-scripts format",
+    "test:php": "php vendor/phpunit/phpunit/phpunit",
+    "plugin-zip": "wp-scripts plugin-zip"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.0"
+  }
+}

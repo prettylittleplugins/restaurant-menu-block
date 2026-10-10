@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "prettylp/menu-filter",
+	"title": "Menu Filter",
+	"category": "widgets",
+	"icon": "filter",
+	"description": "Customer controls for hiding dishes by allergen or dietary profile. Controls every Restaurant Menu block on the page.",
+	"textdomain": "restaurant-menu-block",
+	"keywords": [ "menu", "filter", "allergen", "dietary" ],
+	"attributes": {
+		"layout": { "type": "string", "default": "chips" }
+	},
+	"supports": {
+		"html": false,
+		"interactivity": true,
+		"color": { "text": true, "background": true },
+		"typography": { "fontSize": true },
+		"spacing": { "margin": true, "padding": true }
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,9 @@
+[
+	{ "slug": "butter", "name": "Butter", "groups": [ "milk" ] },
+	{ "slug": "cream", "name": "Cream", "groups": [ "milk" ] },
+	{ "slug": "wheat-flour", "name": "Wheat flour", "groups": [ "gluten" ] },
+	{ "slug": "prawns", "name": "Prawns", "groups": [ "crustaceans" ] },
+	{ "slug": "peanuts", "name": "Peanuts", "groups": [ "peanuts" ] },
+	{ "slug": "soy-sauce", "name": "Soy sauce", "groups": [ "soya", "gluten" ] },
+	{ "slug": "satay-sauce", "name": "Satay sauce", "made_of": [ "peanuts", "soy-sauce" ] }
+]

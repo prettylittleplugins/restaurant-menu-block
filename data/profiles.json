@@ -1,0 +1,4 @@
+{
+	"coeliac": { "name": "Coeliac", "exclude": [ "gluten" ], "medical": true, "badge": "" },
+	"dairy-free": { "name": "Dairy-free", "exclude": [ "milk" ], "medical": true, "badge": "" }
+}

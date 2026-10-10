@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "prettylp/menu",
+	"title": "Restaurant Menu",
+	"category": "widgets",
+	"icon": "food",
+	"description": "A menu of dishes with allergen and dietary information.",
+	"textdomain": "restaurant-menu-block",
+	"keywords": [ "menu", "restaurant", "allergen", "dietary" ],
+	"attributes": {
+		"sections": { "type": "array", "default": [] },
+		"layout": { "type": "string", "default": "list" },
+		"showDescriptions": { "type": "boolean", "default": true },
+		"showPrices": { "type": "boolean", "default": true },
+		"showContains": { "type": "boolean", "default": true },
+		"showKey": { "type": "boolean", "default": false },
+		"embedFilter": { "type": "boolean", "default": false },
+		"unavailable": { "type": "string", "default": "hide" }
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ],
+		"interactivity": true,
+		"color": { "text": true, "background": true },
+		"typography": { "fontSize": true, "lineHeight": true },
+		"spacing": { "margin": true, "padding": true }
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

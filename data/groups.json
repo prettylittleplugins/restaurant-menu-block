@@ -1,0 +1,16 @@
+[
+	{ "slug": "gluten", "name": "Cereals containing gluten", "type": "allergen", "order": 1 },
+	{ "slug": "crustaceans", "name": "Crustaceans", "type": "allergen", "order": 2 },
+	{ "slug": "egg", "name": "Eggs", "type": "allergen", "order": 3 },
+	{ "slug": "fish", "name": "Fish", "type": "allergen", "order": 4 },
+	{ "slug": "peanuts", "name": "Peanuts", "type": "allergen", "order": 5 },
+	{ "slug": "soya", "name": "Soybeans", "type": "allergen", "order": 6 },
+	{ "slug": "milk", "name": "Milk", "type": "allergen", "order": 7 },
+	{ "slug": "nuts", "name": "Tree nuts", "type": "allergen", "order": 8 },
+	{ "slug": "celery", "name": "Celery", "type": "allergen", "order": 9 },
+	{ "slug": "mustard", "name": "Mustard", "type": "allergen", "order": 10 },
+	{ "slug": "sesame", "name": "Sesame", "type": "allergen", "order": 11 },
+	{ "slug": "sulphites", "name": "Sulphur dioxide and sulphites", "type": "allergen", "order": 12 },
+	{ "slug": "lupin", "name": "Lupin", "type": "allergen", "order": 13 },
+	{ "slug": "molluscs", "name": "Molluscs", "type": "allergen", "order": 14 }
+]
