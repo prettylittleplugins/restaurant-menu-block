@@ -81,8 +81,11 @@ final class Taxonomies {
 	/**
 	 * Term meta, declared so it's typed and available over REST.
 	 *
-	 * Ingredient: groups (slugs) OR made_of (ingredient slugs), swap (ingredient slug), unclassified flag.
-	 * Group: type (allergen|intolerance|choice), sort order.
+	 * Ingredient: groups (group slugs) OR made_of (ingredient slugs), may_contain (group slugs),
+	 *             synonyms, swap (ingredient slug), unclassified flag.
+	 * Group: type (legal|intolerance|choice), sort order.
+	 * Both: prettylp_shipped flag (set by the Seeder; marks terms it may update).
+	 * Notes from the data files go in the term description, not meta.
 	 */
 	private static function register_term_meta(): void {
 		$list = [
@@ -100,6 +103,8 @@ final class Taxonomies {
 
 		register_term_meta( self::INGREDIENT, 'prettylp_groups', $list );
 		register_term_meta( self::INGREDIENT, 'prettylp_made_of', $list );
+		register_term_meta( self::INGREDIENT, 'prettylp_may_contain', $list );
+		register_term_meta( self::INGREDIENT, 'prettylp_synonyms', $list );
 		register_term_meta( self::INGREDIENT, 'prettylp_swap', $text );
 		register_term_meta(
 			self::INGREDIENT,
