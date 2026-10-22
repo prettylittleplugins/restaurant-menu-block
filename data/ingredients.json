@@ -1,9 +1,4122 @@
 [
-	{ "slug": "butter", "name": "Butter", "groups": [ "milk" ] },
-	{ "slug": "cream", "name": "Cream", "groups": [ "milk" ] },
-	{ "slug": "wheat-flour", "name": "Wheat flour", "groups": [ "gluten" ] },
-	{ "slug": "prawns", "name": "Prawns", "groups": [ "crustaceans" ] },
-	{ "slug": "peanuts", "name": "Peanuts", "groups": [ "peanuts" ] },
-	{ "slug": "soy-sauce", "name": "Soy sauce", "groups": [ "soya", "gluten" ] },
-	{ "slug": "satay-sauce", "name": "Satay sauce", "made_of": [ "peanuts", "soy-sauce" ] }
+  {
+    "slug": "beef",
+    "label": "Beef",
+    "synonyms": [],
+    "groups": [
+      "meat",
+      "beef"
+    ]
+  },
+  {
+    "slug": "beef-mince",
+    "label": "Beef mince",
+    "synonyms": [
+      "minced beef",
+      "ground beef"
+    ],
+    "made_of": [
+      "beef"
+    ]
+  },
+  {
+    "slug": "steak",
+    "label": "Steak",
+    "synonyms": [
+      "beef steak",
+      "sirloin",
+      "ribeye",
+      "fillet"
+    ],
+    "made_of": [
+      "beef"
+    ]
+  },
+  {
+    "slug": "veal",
+    "label": "Veal",
+    "synonyms": [],
+    "groups": [
+      "meat",
+      "beef"
+    ]
+  },
+  {
+    "slug": "pork",
+    "label": "Pork",
+    "synonyms": [],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "slug": "pork-belly",
+    "label": "Pork belly",
+    "synonyms": [
+      "belly pork"
+    ],
+    "made_of": [
+      "pork"
+    ]
+  },
+  {
+    "slug": "bacon",
+    "label": "Bacon",
+    "synonyms": [
+      "streaky bacon",
+      "back bacon"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "slug": "pancetta",
+    "label": "Pancetta",
+    "synonyms": [],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "slug": "guanciale",
+    "label": "Guanciale",
+    "synonyms": [
+      "pork cheek"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "slug": "ham",
+    "label": "Ham",
+    "synonyms": [
+      "roasted ham",
+      "sliced ham"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "slug": "gammon",
+    "label": "Gammon",
+    "synonyms": [
+      "gammon steak"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "slug": "prosciutto",
+    "label": "Prosciutto",
+    "synonyms": [
+      "parma ham"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "slug": "chorizo",
+    "label": "Chorizo",
+    "synonyms": [],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "slug": "salami",
+    "label": "Salami",
+    "synonyms": [
+      "pepperoni"
+    ],
+    "groups": [
+      "meat",
+      "pork"
+    ]
+  },
+  {
+    "slug": "sausage",
+    "label": "Sausage",
+    "synonyms": [
+      "pork sausage",
+      "banger"
+    ],
+    "groups": [
+      "meat",
+      "pork",
+      "gluten-cereals",
+      "sulphites"
+    ],
+    "notes": "Standard UK pork sausages often contain wheat rusk and sulphite preservatives. Verify if using gluten-free."
+  },
+  {
+    "slug": "black-pudding",
+    "label": "Black pudding",
+    "synonyms": [
+      "blood sausage"
+    ],
+    "groups": [
+      "meat",
+      "pork",
+      "gluten-cereals"
+    ],
+    "notes": "Usually contains oats or barley."
+  },
+  {
+    "slug": "lamb",
+    "label": "Lamb",
+    "synonyms": [],
+    "groups": [
+      "meat",
+      "lamb"
+    ]
+  },
+  {
+    "slug": "lamb-mince",
+    "label": "Lamb mince",
+    "synonyms": [
+      "minced lamb"
+    ],
+    "made_of": [
+      "lamb"
+    ]
+  },
+  {
+    "slug": "mutton",
+    "label": "Mutton",
+    "synonyms": [],
+    "groups": [
+      "meat",
+      "lamb"
+    ]
+  },
+  {
+    "slug": "goat",
+    "label": "Goat",
+    "synonyms": [
+      "goat meat"
+    ],
+    "groups": [
+      "meat"
+    ]
+  },
+  {
+    "slug": "chicken",
+    "label": "Chicken",
+    "synonyms": [],
+    "groups": [
+      "poultry"
+    ]
+  },
+  {
+    "slug": "chicken-breast",
+    "label": "Chicken breast",
+    "synonyms": [],
+    "made_of": [
+      "chicken"
+    ]
+  },
+  {
+    "slug": "chicken-thigh",
+    "label": "Chicken thigh",
+    "synonyms": [],
+    "made_of": [
+      "chicken"
+    ]
+  },
+  {
+    "slug": "turkey",
+    "label": "Turkey",
+    "synonyms": [],
+    "groups": [
+      "poultry"
+    ]
+  },
+  {
+    "slug": "duck",
+    "label": "Duck",
+    "synonyms": [],
+    "groups": [
+      "poultry"
+    ]
+  },
+  {
+    "slug": "quail",
+    "label": "Quail",
+    "synonyms": [],
+    "groups": [
+      "poultry"
+    ]
+  },
+  {
+    "slug": "grouse",
+    "label": "Grouse",
+    "synonyms": [],
+    "groups": [
+      "poultry",
+      "game"
+    ]
+  },
+  {
+    "slug": "partridge",
+    "label": "Partridge",
+    "synonyms": [],
+    "groups": [
+      "poultry",
+      "game"
+    ]
+  },
+  {
+    "slug": "pigeon",
+    "label": "Pigeon",
+    "synonyms": [
+      "squab"
+    ],
+    "groups": [
+      "poultry",
+      "game"
+    ]
+  },
+  {
+    "slug": "venison",
+    "label": "Venison",
+    "synonyms": [
+      "deer"
+    ],
+    "groups": [
+      "meat",
+      "game"
+    ]
+  },
+  {
+    "slug": "rabbit",
+    "label": "Rabbit",
+    "synonyms": [],
+    "groups": [
+      "meat",
+      "game"
+    ]
+  },
+  {
+    "slug": "cod",
+    "label": "Cod",
+    "synonyms": [],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "slug": "haddock",
+    "label": "Haddock",
+    "synonyms": [],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "slug": "smoked-haddock",
+    "label": "Smoked haddock",
+    "synonyms": [],
+    "made_of": [
+      "haddock"
+    ]
+  },
+  {
+    "slug": "salmon",
+    "label": "Salmon",
+    "synonyms": [],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "slug": "smoked-salmon",
+    "label": "Smoked salmon",
+    "synonyms": [],
+    "made_of": [
+      "salmon"
+    ]
+  },
+  {
+    "slug": "tuna",
+    "label": "Tuna",
+    "synonyms": [
+      "yellowfin",
+      "bluefin"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "slug": "mackerel",
+    "label": "Mackerel",
+    "synonyms": [],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "slug": "seabass",
+    "label": "Seabass",
+    "synonyms": [
+      "sea bass"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "slug": "trout",
+    "label": "Trout",
+    "synonyms": [],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "slug": "anchovy",
+    "label": "Anchovy",
+    "synonyms": [
+      "anchovies"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "slug": "sardine",
+    "label": "Sardine",
+    "synonyms": [
+      "pilchard"
+    ],
+    "groups": [
+      "fish"
+    ]
+  },
+  {
+    "slug": "prawn",
+    "label": "Prawn",
+    "synonyms": [
+      "shrimp",
+      "king prawn",
+      "tiger prawn"
+    ],
+    "groups": [
+      "crustaceans",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "crab",
+    "label": "Crab",
+    "synonyms": [
+      "white crab meat",
+      "brown crab meat"
+    ],
+    "groups": [
+      "crustaceans",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "lobster",
+    "label": "Lobster",
+    "synonyms": [],
+    "groups": [
+      "crustaceans",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "crayfish",
+    "label": "Crayfish",
+    "synonyms": [
+      "crawfish"
+    ],
+    "groups": [
+      "crustaceans",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "langoustine",
+    "label": "Langoustine",
+    "synonyms": [
+      "scampi"
+    ],
+    "groups": [
+      "crustaceans",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "mussel",
+    "label": "Mussel",
+    "synonyms": [
+      "mussels"
+    ],
+    "groups": [
+      "molluscs",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "oyster",
+    "label": "Oyster",
+    "synonyms": [
+      "oysters"
+    ],
+    "groups": [
+      "molluscs",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "scallop",
+    "label": "Scallop",
+    "synonyms": [
+      "king scallop",
+      "queen scallop"
+    ],
+    "groups": [
+      "molluscs",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "squid",
+    "label": "Squid",
+    "synonyms": [
+      "calamari"
+    ],
+    "groups": [
+      "molluscs",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "octopus",
+    "label": "Octopus",
+    "synonyms": [],
+    "groups": [
+      "molluscs",
+      "shellfish"
+    ]
+  },
+  {
+    "slug": "egg",
+    "label": "Egg",
+    "synonyms": [
+      "hens egg",
+      "chicken egg"
+    ],
+    "groups": [
+      "eggs",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "egg-yolk",
+    "label": "Egg yolk",
+    "synonyms": [
+      "yolk"
+    ],
+    "made_of": [
+      "egg"
+    ]
+  },
+  {
+    "slug": "egg-white",
+    "label": "Egg white",
+    "synonyms": [
+      "albumen"
+    ],
+    "made_of": [
+      "egg"
+    ]
+  },
+  {
+    "slug": "quail-egg",
+    "label": "Quail egg",
+    "synonyms": [
+      "quails egg"
+    ],
+    "groups": [
+      "eggs",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "cows-milk",
+    "label": "Cow's milk",
+    "synonyms": [
+      "milk",
+      "whole milk",
+      "semi-skimmed milk",
+      "skimmed milk"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ],
+    "swap": "oat-milk"
+  },
+  {
+    "slug": "goats-milk",
+    "label": "Goat's milk",
+    "synonyms": [
+      "goat milk"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "sheeps-milk",
+    "label": "Sheep's milk",
+    "synonyms": [
+      "sheep milk"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "cream",
+    "label": "Cream",
+    "synonyms": [
+      "single cream",
+      "whipping cream"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "double-cream",
+    "label": "Double cream",
+    "synonyms": [
+      "heavy cream"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "sour-cream",
+    "label": "Sour cream",
+    "synonyms": [
+      "soured cream"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "creme-fraiche",
+    "label": "Crème fraîche",
+    "synonyms": [
+      "creme fraiche"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "butter",
+    "label": "Butter",
+    "synonyms": [
+      "unsalted butter",
+      "salted butter"
+    ],
+    "groups": [
+      "milk",
+      "animal-derived"
+    ],
+    "notes": "Butter contains trace lactose, usually well tolerated by lactose intolerants, but is still a milk allergen."
+  },
+  {
+    "slug": "ghee",
+    "label": "Ghee",
+    "synonyms": [
+      "clarified butter"
+    ],
+    "groups": [
+      "milk",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "cheddar",
+    "label": "Cheddar",
+    "synonyms": [
+      "mature cheddar",
+      "mild cheddar",
+      "cheddar cheese"
+    ],
+    "groups": [
+      "milk",
+      "animal-derived"
+    ],
+    "notes": "Aged hard cheese; lactose is generally negligible."
+  },
+  {
+    "slug": "mozzarella",
+    "label": "Mozzarella",
+    "synonyms": [
+      "mozzarella cheese",
+      "fior di latte"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "parmesan",
+    "label": "Parmesan",
+    "synonyms": [
+      "parmigiano reggiano"
+    ],
+    "groups": [
+      "milk",
+      "animal-derived"
+    ],
+    "notes": "Traditional parmesan contains animal rennet. Negligible lactose."
+  },
+  {
+    "slug": "feta",
+    "label": "Feta",
+    "synonyms": [
+      "feta cheese"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ],
+    "notes": "Usually made from sheep/goat milk."
+  },
+  {
+    "slug": "halloumi",
+    "label": "Halloumi",
+    "synonyms": [
+      "halloumi cheese"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "brie",
+    "label": "Brie",
+    "synonyms": [
+      "brie cheese"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "camembert",
+    "label": "Camembert",
+    "synonyms": [
+      "camembert cheese"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "ricotta",
+    "label": "Ricotta",
+    "synonyms": [
+      "ricotta cheese"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "mascarpone",
+    "label": "Mascarpone",
+    "synonyms": [],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "blue-cheese",
+    "label": "Blue cheese",
+    "synonyms": [
+      "stilton",
+      "roquefort",
+      "gorgonzola"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "paneer",
+    "label": "Paneer",
+    "synonyms": [
+      "indian cottage cheese"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "yoghurt",
+    "label": "Yoghurt",
+    "synonyms": [
+      "yogurt",
+      "natural yoghurt"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "greek-yoghurt",
+    "label": "Greek yoghurt",
+    "synonyms": [
+      "greek yogurt"
+    ],
+    "groups": [
+      "milk",
+      "lactose",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "beef-dripping",
+    "label": "Beef dripping",
+    "synonyms": [
+      "dripping",
+      "beef fat"
+    ],
+    "groups": [
+      "beef",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "lard",
+    "label": "Lard",
+    "synonyms": [
+      "pork fat"
+    ],
+    "groups": [
+      "pork",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "duck-fat",
+    "label": "Duck fat",
+    "synonyms": [],
+    "groups": [
+      "poultry",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "goose-fat",
+    "label": "Goose fat",
+    "synonyms": [],
+    "groups": [
+      "poultry",
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "olive-oil",
+    "label": "Olive oil",
+    "synonyms": [
+      "extra virgin olive oil",
+      "evoo"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "vegetable-oil",
+    "label": "Vegetable oil",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "sunflower-oil",
+    "label": "Sunflower oil",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "rapeseed-oil",
+    "label": "Rapeseed oil",
+    "synonyms": [
+      "canola oil"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "coconut-oil",
+    "label": "Coconut oil",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "sesame-oil",
+    "label": "Sesame oil",
+    "synonyms": [
+      "toasted sesame oil"
+    ],
+    "groups": [
+      "sesame"
+    ]
+  },
+  {
+    "slug": "peanut-oil",
+    "label": "Peanut oil",
+    "synonyms": [
+      "groundnut oil"
+    ],
+    "groups": [
+      "peanuts"
+    ]
+  },
+  {
+    "slug": "potato",
+    "label": "Potato",
+    "synonyms": [
+      "potatoes"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "sweet-potato",
+    "label": "Sweet potato",
+    "synonyms": [
+      "sweet potatoes"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "carrot",
+    "label": "Carrot",
+    "synonyms": [
+      "carrots"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "parsnip",
+    "label": "Parsnip",
+    "synonyms": [
+      "parsnips"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "butternut-squash",
+    "label": "Butternut squash",
+    "synonyms": [
+      "squash"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "pumpkin",
+    "label": "Pumpkin",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "onion",
+    "label": "Onion",
+    "synonyms": [
+      "white onion",
+      "brown onion",
+      "onions"
+    ],
+    "groups": [
+      "alliums"
+    ]
+  },
+  {
+    "slug": "red-onion",
+    "label": "Red onion",
+    "synonyms": [
+      "red onions"
+    ],
+    "groups": [
+      "alliums"
+    ]
+  },
+  {
+    "slug": "spring-onion",
+    "label": "Spring onion",
+    "synonyms": [
+      "scallion",
+      "scallions",
+      "green onion"
+    ],
+    "groups": [
+      "alliums"
+    ]
+  },
+  {
+    "slug": "shallot",
+    "label": "Shallot",
+    "synonyms": [
+      "shallots"
+    ],
+    "groups": [
+      "alliums"
+    ]
+  },
+  {
+    "slug": "garlic",
+    "label": "Garlic",
+    "synonyms": [
+      "garlic clove",
+      "garlic bulb"
+    ],
+    "groups": [
+      "alliums"
+    ]
+  },
+  {
+    "slug": "leek",
+    "label": "Leek",
+    "synonyms": [
+      "leeks"
+    ],
+    "groups": [
+      "alliums"
+    ]
+  },
+  {
+    "slug": "celery",
+    "label": "Celery",
+    "synonyms": [
+      "celery stick",
+      "celery stalks"
+    ],
+    "groups": [
+      "celery"
+    ]
+  },
+  {
+    "slug": "celeriac",
+    "label": "Celeriac",
+    "synonyms": [
+      "celery root"
+    ],
+    "groups": [
+      "celery"
+    ]
+  },
+  {
+    "slug": "tomato",
+    "label": "Tomato",
+    "synonyms": [
+      "tomatoes",
+      "salad tomato",
+      "plum tomato"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "cherry-tomato",
+    "label": "Cherry tomato",
+    "synonyms": [
+      "cherry tomatoes",
+      "baby plum tomatoes"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "red-pepper",
+    "label": "Red pepper",
+    "synonyms": [
+      "bell pepper",
+      "capsicum",
+      "red bell pepper"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "green-pepper",
+    "label": "Green pepper",
+    "synonyms": [
+      "green bell pepper"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "chilli",
+    "label": "Chilli",
+    "synonyms": [
+      "chili",
+      "hot pepper",
+      "red chilli",
+      "green chilli"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "aubergine",
+    "label": "Aubergine",
+    "synonyms": [
+      "eggplant"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "courgette",
+    "label": "Courgette",
+    "synonyms": [
+      "zucchini",
+      "baby marrow"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "cucumber",
+    "label": "Cucumber",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "lettuce",
+    "label": "Lettuce",
+    "synonyms": [
+      "iceberg",
+      "cos",
+      "romaine",
+      "gem lettuce"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "spinach",
+    "label": "Spinach",
+    "synonyms": [
+      "baby spinach"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "rocket",
+    "label": "Rocket",
+    "synonyms": [
+      "arugula",
+      "rucola"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "kale",
+    "label": "Kale",
+    "synonyms": [
+      "cavolo nero",
+      "curly kale"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "cabbage",
+    "label": "Cabbage",
+    "synonyms": [
+      "white cabbage",
+      "savoy cabbage",
+      "green cabbage"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "red-cabbage",
+    "label": "Red cabbage",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "cauliflower",
+    "label": "Cauliflower",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "broccoli",
+    "label": "Broccoli",
+    "synonyms": [
+      "tenderstem",
+      "calabrese"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "peas",
+    "label": "Peas",
+    "synonyms": [
+      "garden peas",
+      "petit pois"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "sweetcorn",
+    "label": "Sweetcorn",
+    "synonyms": [
+      "corn",
+      "corn on the cob",
+      "maize"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "green-beans",
+    "label": "Green beans",
+    "synonyms": [
+      "french beans",
+      "fine beans",
+      "string beans"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "broad-beans",
+    "label": "Broad beans",
+    "synonyms": [
+      "fava beans"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "asparagus",
+    "label": "Asparagus",
+    "synonyms": [
+      "asparagus spears"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "artichoke",
+    "label": "Artichoke",
+    "synonyms": [
+      "globe artichoke",
+      "artichoke hearts"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "fennel",
+    "label": "Fennel",
+    "synonyms": [
+      "fennel bulb"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "watercress",
+    "label": "Watercress",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "endive",
+    "label": "Endive",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "chicory",
+    "label": "Chicory",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "radicchio",
+    "label": "Radicchio",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "mushroom",
+    "label": "Mushroom",
+    "synonyms": [
+      "white mushroom",
+      "button mushroom"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "chestnut-mushroom",
+    "label": "Chestnut mushroom",
+    "synonyms": [
+      "cremini"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "portobello-mushroom",
+    "label": "Portobello mushroom",
+    "synonyms": [
+      "flat mushroom"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "truffle",
+    "label": "Truffle",
+    "synonyms": [
+      "black truffle",
+      "white truffle"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "olive",
+    "label": "Olive",
+    "synonyms": [
+      "olives",
+      "black olives",
+      "green olives"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "caper",
+    "label": "Caper",
+    "synonyms": [
+      "capers"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "avocado",
+    "label": "Avocado",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "apple",
+    "label": "Apple",
+    "synonyms": [
+      "apples"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "pear",
+    "label": "Pear",
+    "synonyms": [
+      "pears"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "banana",
+    "label": "Banana",
+    "synonyms": [
+      "bananas"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "orange",
+    "label": "Orange",
+    "synonyms": [
+      "oranges"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "lemon",
+    "label": "Lemon",
+    "synonyms": [
+      "lemons"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "lime",
+    "label": "Lime",
+    "synonyms": [
+      "limes"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "grapefruit",
+    "label": "Grapefruit",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "clementine",
+    "label": "Clementine",
+    "synonyms": [
+      "satsuma",
+      "mandarin",
+      "tangerine"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "strawberry",
+    "label": "Strawberry",
+    "synonyms": [
+      "strawberries"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "raspberry",
+    "label": "Raspberry",
+    "synonyms": [
+      "raspberries"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "blueberry",
+    "label": "Blueberry",
+    "synonyms": [
+      "blueberries"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "blackberry",
+    "label": "Blackberry",
+    "synonyms": [
+      "blackberries"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "cherry",
+    "label": "Cherry",
+    "synonyms": [
+      "cherries"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "grape",
+    "label": "Grape",
+    "synonyms": [
+      "grapes",
+      "white grapes",
+      "red grapes"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "melon",
+    "label": "Melon",
+    "synonyms": [
+      "cantaloupe",
+      "honeydew",
+      "galia"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "watermelon",
+    "label": "Watermelon",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "pineapple",
+    "label": "Pineapple",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "mango",
+    "label": "Mango",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "papaya",
+    "label": "Papaya",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "coconut",
+    "label": "Coconut",
+    "synonyms": [
+      "desiccated coconut"
+    ],
+    "groups": [],
+    "notes": "Botanically a drupe. Not classified as a tree nut under UK/EU allergen law."
+  },
+  {
+    "slug": "peach",
+    "label": "Peach",
+    "synonyms": [
+      "peaches"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "plum",
+    "label": "Plum",
+    "synonyms": [
+      "plums"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "apricot",
+    "label": "Apricot",
+    "synonyms": [
+      "apricots",
+      "dried apricots"
+    ],
+    "groups": [],
+    "may_contain": [
+      "sulphites"
+    ],
+    "notes": "Dried apricots very commonly contain high levels of added sulphites (E220) to preserve colour."
+  },
+  {
+    "slug": "date",
+    "label": "Date",
+    "synonyms": [
+      "dates",
+      "medjool dates"
+    ],
+    "groups": [],
+    "may_contain": [
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "fig",
+    "label": "Fig",
+    "synonyms": [
+      "figs",
+      "dried figs"
+    ],
+    "groups": [],
+    "may_contain": [
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "pomegranate",
+    "label": "Pomegranate",
+    "synonyms": [
+      "pomegranate seeds"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "raisin",
+    "label": "Raisin",
+    "synonyms": [
+      "raisins"
+    ],
+    "groups": [],
+    "may_contain": [
+      "sulphites"
+    ],
+    "notes": "Dried vine fruits often contain sulphites."
+  },
+  {
+    "slug": "sultana",
+    "label": "Sultana",
+    "synonyms": [
+      "sultanas",
+      "golden raisins"
+    ],
+    "groups": [],
+    "may_contain": [
+      "sulphites"
+    ],
+    "notes": "Particularly golden sultanas which are heavily treated with sulphur dioxide."
+  },
+  {
+    "slug": "coriander",
+    "label": "Coriander",
+    "synonyms": [
+      "cilantro",
+      "fresh coriander",
+      "coriander leaf"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "parsley",
+    "label": "Parsley",
+    "synonyms": [
+      "flat leaf parsley",
+      "curly parsley"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "basil",
+    "label": "Basil",
+    "synonyms": [
+      "sweet basil",
+      "thai basil"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "mint",
+    "label": "Mint",
+    "synonyms": [
+      "peppermint",
+      "spearmint",
+      "fresh mint"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "thyme",
+    "label": "Thyme",
+    "synonyms": [
+      "fresh thyme"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "rosemary",
+    "label": "Rosemary",
+    "synonyms": [
+      "fresh rosemary"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "sage",
+    "label": "Sage",
+    "synonyms": [
+      "fresh sage"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "oregano",
+    "label": "Oregano",
+    "synonyms": [
+      "dried oregano"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "chive",
+    "label": "Chive",
+    "synonyms": [
+      "chives"
+    ],
+    "groups": [
+      "alliums"
+    ]
+  },
+  {
+    "slug": "tarragon",
+    "label": "Tarragon",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "dill",
+    "label": "Dill",
+    "synonyms": [
+      "dill weed"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "lemongrass",
+    "label": "Lemongrass",
+    "synonyms": [
+      "lemon grass"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "black-pepper",
+    "label": "Black pepper",
+    "synonyms": [
+      "peppercorns",
+      "ground black pepper"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "white-pepper",
+    "label": "White pepper",
+    "synonyms": [
+      "ground white pepper"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "salt",
+    "label": "Salt",
+    "synonyms": [
+      "sea salt",
+      "table salt",
+      "kosher salt"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "cumin",
+    "label": "Cumin",
+    "synonyms": [
+      "ground cumin",
+      "cumin seeds"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "coriander-seed",
+    "label": "Coriander seed",
+    "synonyms": [
+      "ground coriander"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "turmeric",
+    "label": "Turmeric",
+    "synonyms": [
+      "ground turmeric",
+      "fresh turmeric"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "paprika",
+    "label": "Paprika",
+    "synonyms": [
+      "sweet paprika"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "smoked-paprika",
+    "label": "Smoked paprika",
+    "synonyms": [
+      "pimenton"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "chilli-powder",
+    "label": "Chilli powder",
+    "synonyms": [
+      "chili powder",
+      "chilli flakes"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "cayenne-pepper",
+    "label": "Cayenne pepper",
+    "synonyms": [
+      "cayenne"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "cinnamon",
+    "label": "Cinnamon",
+    "synonyms": [
+      "ground cinnamon",
+      "cinnamon stick"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "nutmeg",
+    "label": "Nutmeg",
+    "synonyms": [
+      "ground nutmeg",
+      "whole nutmeg"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "clove",
+    "label": "Clove",
+    "synonyms": [
+      "cloves",
+      "ground cloves"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "cardamom",
+    "label": "Cardamom",
+    "synonyms": [
+      "cardamom pods",
+      "ground cardamom"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "star-anise",
+    "label": "Star anise",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "saffron",
+    "label": "Saffron",
+    "synonyms": [
+      "saffron strands"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "ginger",
+    "label": "Ginger",
+    "synonyms": [
+      "fresh ginger",
+      "ground ginger",
+      "root ginger"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "galangal",
+    "label": "Galangal",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "mustard-seed",
+    "label": "Mustard seed",
+    "synonyms": [
+      "mustard seeds",
+      "black mustard seed",
+      "yellow mustard seed"
+    ],
+    "groups": [
+      "mustard"
+    ]
+  },
+  {
+    "slug": "fenugreek",
+    "label": "Fenugreek",
+    "synonyms": [
+      "fenugreek seeds",
+      "methi"
+    ],
+    "groups": [],
+    "notes": "Legume. Some peanut-allergic individuals can cross-react with fenugreek, though it's not a legal allergen itself."
+  },
+  {
+    "slug": "fennel-seed",
+    "label": "Fennel seed",
+    "synonyms": [
+      "fennel seeds"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "wheat",
+    "label": "Wheat",
+    "synonyms": [
+      "wheat grains",
+      "wheat berries"
+    ],
+    "groups": [
+      "gluten-cereals"
+    ]
+  },
+  {
+    "slug": "wheat-flour",
+    "label": "Wheat flour",
+    "synonyms": [
+      "flour"
+    ],
+    "made_of": [
+      "wheat"
+    ]
+  },
+  {
+    "slug": "plain-flour",
+    "label": "Plain flour",
+    "synonyms": [
+      "all purpose flour"
+    ],
+    "made_of": [
+      "wheat"
+    ]
+  },
+  {
+    "slug": "self-raising-flour",
+    "label": "Self-Raising flour",
+    "synonyms": [
+      "self raising flour"
+    ],
+    "made_of": [
+      "wheat"
+    ]
+  },
+  {
+    "slug": "strong-flour",
+    "label": "Strong flour",
+    "synonyms": [
+      "bread flour",
+      "strong white flour"
+    ],
+    "made_of": [
+      "wheat"
+    ]
+  },
+  {
+    "slug": "wholemeal-flour",
+    "label": "Wholemeal flour",
+    "synonyms": [
+      "wholewheat flour"
+    ],
+    "made_of": [
+      "wheat"
+    ]
+  },
+  {
+    "slug": "spelt",
+    "label": "Spelt",
+    "synonyms": [
+      "spelt flour"
+    ],
+    "groups": [
+      "gluten-cereals"
+    ]
+  },
+  {
+    "slug": "rye-flour",
+    "label": "Rye flour",
+    "synonyms": [
+      "rye"
+    ],
+    "groups": [
+      "gluten-cereals"
+    ]
+  },
+  {
+    "slug": "barley",
+    "label": "Barley",
+    "synonyms": [
+      "pearl barley"
+    ],
+    "groups": [
+      "gluten-cereals"
+    ]
+  },
+  {
+    "slug": "oats",
+    "label": "Oats",
+    "synonyms": [
+      "porridge oats",
+      "rolled oats",
+      "jumbo oats"
+    ],
+    "groups": [
+      "gluten-cereals"
+    ],
+    "notes": "Oats naturally contain avenin and are highly prone to gluten cross-contamination unless certified 'Gluten Free'. Legally grouped with gluten-containing cereals in the UK."
+  },
+  {
+    "slug": "rice",
+    "label": "Rice",
+    "synonyms": [
+      "white rice",
+      "long grain rice"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "basmati-rice",
+    "label": "Basmati rice",
+    "synonyms": [
+      "basmati"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "jasmine-rice",
+    "label": "Jasmine rice",
+    "synonyms": [
+      "jasmine",
+      "thai fragrant rice"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "arborio-rice",
+    "label": "Arborio rice",
+    "synonyms": [
+      "risotto rice"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "brown-rice",
+    "label": "Brown rice",
+    "synonyms": [
+      "wholegrain rice"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "quinoa",
+    "label": "Quinoa",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "couscous",
+    "label": "Couscous",
+    "synonyms": [
+      "pearl couscous",
+      "giant couscous"
+    ],
+    "made_of": [
+      "wheat"
+    ]
+  },
+  {
+    "slug": "bulgur-wheat",
+    "label": "Bulgur wheat",
+    "synonyms": [
+      "bulgar wheat"
+    ],
+    "made_of": [
+      "wheat"
+    ]
+  },
+  {
+    "slug": "buckwheat",
+    "label": "Buckwheat",
+    "synonyms": [
+      "buckwheat flour",
+      "soba"
+    ],
+    "groups": [],
+    "notes": "Despite the name, buckwheat is not related to wheat and is naturally gluten-free."
+  },
+  {
+    "slug": "polenta",
+    "label": "Polenta",
+    "synonyms": [
+      "cornmeal"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "cornflour",
+    "label": "Cornflour",
+    "synonyms": [
+      "cornstarch",
+      "maize starch"
+    ],
+    "groups": [],
+    "may_contain": [
+      "gluten-cereals"
+    ],
+    "notes": "Usually pure maize/corn starch in the UK. Double-check facility cross-contamination for gluten if used as a GF thickener."
+  },
+  {
+    "slug": "potato-starch",
+    "label": "Potato starch",
+    "synonyms": [
+      "potato flour"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "almond",
+    "label": "Almond",
+    "synonyms": [
+      "almonds",
+      "flaked almonds",
+      "ground almonds"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "slug": "hazelnut",
+    "label": "Hazelnut",
+    "synonyms": [
+      "hazelnuts",
+      "cobnuts"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "slug": "walnut",
+    "label": "Walnut",
+    "synonyms": [
+      "walnuts"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "slug": "cashew",
+    "label": "Cashew",
+    "synonyms": [
+      "cashew nut",
+      "cashews"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "slug": "pecan",
+    "label": "Pecan",
+    "synonyms": [
+      "pecan nut",
+      "pecans"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "slug": "brazil-nut",
+    "label": "Brazil nut",
+    "synonyms": [
+      "brazils"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "slug": "pistachio",
+    "label": "Pistachio",
+    "synonyms": [
+      "pistachios",
+      "pistachio nut"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "slug": "macadamia",
+    "label": "Macadamia",
+    "synonyms": [
+      "macadamia nut",
+      "queensland nut"
+    ],
+    "groups": [
+      "tree-nuts"
+    ]
+  },
+  {
+    "slug": "chestnut",
+    "label": "Chestnut",
+    "synonyms": [
+      "chestnuts",
+      "sweet chestnut"
+    ],
+    "groups": [],
+    "notes": "Chestnuts are not classified as an allergen under UK/EU 'Tree Nut' legislation."
+  },
+  {
+    "slug": "pine-nut",
+    "label": "Pine nut",
+    "synonyms": [
+      "pine nuts",
+      "pignoli"
+    ],
+    "groups": [],
+    "notes": "Pine nuts are seeds, not classified as an allergen under UK/EU 'Tree Nut' legislation. However, many sufferers avoid them."
+  },
+  {
+    "slug": "peanut",
+    "label": "Peanut",
+    "synonyms": [
+      "peanuts",
+      "groundnut",
+      "monkey nut"
+    ],
+    "groups": [
+      "peanuts"
+    ]
+  },
+  {
+    "slug": "sesame-seed",
+    "label": "Sesame seed",
+    "synonyms": [
+      "sesame seeds",
+      "black sesame"
+    ],
+    "groups": [
+      "sesame"
+    ]
+  },
+  {
+    "slug": "pumpkin-seed",
+    "label": "Pumpkin seed",
+    "synonyms": [
+      "pepitas",
+      "pumpkin seeds"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "sunflower-seed",
+    "label": "Sunflower seed",
+    "synonyms": [
+      "sunflower seeds"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "chia-seed",
+    "label": "Chia seed",
+    "synonyms": [
+      "chia seeds"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "poppy-seed",
+    "label": "Poppy seed",
+    "synonyms": [
+      "poppy seeds"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "flaxseed",
+    "label": "Flaxseed",
+    "synonyms": [
+      "linseed",
+      "flaxseeds"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "mayonnaise",
+    "label": "Mayonnaise",
+    "synonyms": [
+      "mayo"
+    ],
+    "made_of": [
+      "vegetable-oil",
+      "egg-yolk",
+      "mustard",
+      "white-wine-vinegar"
+    ]
+  },
+  {
+    "slug": "aioli",
+    "label": "Aioli",
+    "synonyms": [
+      "garlic mayonnaise"
+    ],
+    "made_of": [
+      "mayonnaise",
+      "garlic"
+    ]
+  },
+  {
+    "slug": "hollandaise",
+    "label": "Hollandaise",
+    "synonyms": [
+      "hollandaise sauce"
+    ],
+    "made_of": [
+      "butter",
+      "egg-yolk",
+      "lemon",
+      "white-wine-vinegar"
+    ]
+  },
+  {
+    "slug": "bearnaise",
+    "label": "Béarnaise",
+    "synonyms": [
+      "bearnaise sauce"
+    ],
+    "made_of": [
+      "hollandaise",
+      "tarragon",
+      "shallot"
+    ]
+  },
+  {
+    "slug": "tartare-sauce",
+    "label": "Tartare sauce",
+    "synonyms": [
+      "tartar sauce"
+    ],
+    "made_of": [
+      "mayonnaise",
+      "caper",
+      "lemon",
+      "parsley"
+    ]
+  },
+  {
+    "slug": "marie-rose-sauce",
+    "label": "Marie Rose sauce",
+    "synonyms": [
+      "seafood sauce",
+      "prawn cocktail sauce",
+      "thousand island"
+    ],
+    "made_of": [
+      "mayonnaise",
+      "ketchup",
+      "worcestershire-sauce",
+      "lemon"
+    ]
+  },
+  {
+    "slug": "ketchup",
+    "label": "Ketchup",
+    "synonyms": [
+      "tomato ketchup",
+      "red sauce"
+    ],
+    "made_of": [
+      "tomato",
+      "sugar",
+      "white-wine-vinegar",
+      "celery"
+    ],
+    "notes": "Commercial ketchup recipes very commonly contain celery as a flavouring."
+  },
+  {
+    "slug": "brown-sauce",
+    "label": "Brown sauce",
+    "synonyms": [
+      "hp sauce"
+    ],
+    "groups": [
+      "nightshades",
+      "gluten-cereals",
+      "sulphites"
+    ],
+    "notes": "Usually contains tomatoes and rye/barley flour or malt vinegar."
+  },
+  {
+    "slug": "mustard",
+    "label": "Mustard (prepared)",
+    "synonyms": [
+      "mustard paste"
+    ],
+    "made_of": [
+      "mustard-seed",
+      "white-wine-vinegar",
+      "salt"
+    ]
+  },
+  {
+    "slug": "english-mustard",
+    "label": "English mustard",
+    "synonyms": [
+      "colmans"
+    ],
+    "made_of": [
+      "mustard",
+      "wheat-flour",
+      "turmeric"
+    ],
+    "notes": "Standard English mustard usually contains wheat flour as a thickener/stabiliser."
+  },
+  {
+    "slug": "dijon-mustard",
+    "label": "Dijon mustard",
+    "synonyms": [],
+    "groups": [
+      "mustard",
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "wholegrain-mustard",
+    "label": "Wholegrain mustard",
+    "synonyms": [
+      "grain mustard"
+    ],
+    "made_of": [
+      "mustard-seed",
+      "white-wine-vinegar",
+      "sugar",
+      "salt"
+    ]
+  },
+  {
+    "slug": "soy-sauce",
+    "label": "Soy sauce",
+    "synonyms": [
+      "soya sauce",
+      "light soy sauce",
+      "dark soy sauce"
+    ],
+    "groups": [
+      "soya",
+      "gluten-cereals"
+    ],
+    "swap": "tamari",
+    "notes": "Traditional soy sauce is brewed with roasted wheat."
+  },
+  {
+    "slug": "tamari",
+    "label": "Tamari",
+    "synonyms": [
+      "gluten free soy sauce"
+    ],
+    "groups": [
+      "soya"
+    ],
+    "notes": "Japanese soy sauce made without wheat. Always check the label to ensure it is 100% wheat-free."
+  },
+  {
+    "slug": "fish-sauce",
+    "label": "Fish sauce",
+    "synonyms": [
+      "nam pla",
+      "nuoc cham"
+    ],
+    "made_of": [
+      "anchovy",
+      "salt",
+      "sugar"
+    ]
+  },
+  {
+    "slug": "oyster-sauce",
+    "label": "Oyster sauce",
+    "synonyms": [],
+    "made_of": [
+      "oyster",
+      "soy-sauce",
+      "sugar",
+      "cornflour"
+    ]
+  },
+  {
+    "slug": "worcestershire-sauce",
+    "label": "Worcestershire sauce",
+    "synonyms": [
+      "lea and perrins"
+    ],
+    "made_of": [
+      "malt-vinegar",
+      "anchovy",
+      "onion",
+      "garlic",
+      "sugar"
+    ]
+  },
+  {
+    "slug": "tabasco",
+    "label": "Tabasco",
+    "synonyms": [
+      "hot pepper sauce"
+    ],
+    "made_of": [
+      "chilli",
+      "white-wine-vinegar",
+      "salt"
+    ]
+  },
+  {
+    "slug": "sriracha",
+    "label": "Sriracha",
+    "synonyms": [
+      "chilli sauce"
+    ],
+    "made_of": [
+      "chilli",
+      "garlic",
+      "sugar",
+      "white-wine-vinegar",
+      "salt"
+    ]
+  },
+  {
+    "slug": "hoisin-sauce",
+    "label": "Hoisin sauce",
+    "synonyms": [
+      "peking sauce"
+    ],
+    "groups": [
+      "soya",
+      "sesame",
+      "gluten-cereals",
+      "alliums"
+    ],
+    "notes": "Typically made from fermented soybean paste, garlic, vinegar, sesame oil, and wheat flour."
+  },
+  {
+    "slug": "plum-sauce",
+    "label": "Plum sauce",
+    "synonyms": [],
+    "made_of": [
+      "plum",
+      "sugar",
+      "white-wine-vinegar",
+      "ginger",
+      "chilli"
+    ]
+  },
+  {
+    "slug": "sweet-chilli-sauce",
+    "label": "Sweet chilli sauce",
+    "synonyms": [
+      "sweet chili"
+    ],
+    "made_of": [
+      "chilli",
+      "garlic",
+      "sugar",
+      "white-wine-vinegar"
+    ]
+  },
+  {
+    "slug": "teriyaki-sauce",
+    "label": "Teriyaki sauce",
+    "synonyms": [
+      "teriyaki glaze"
+    ],
+    "made_of": [
+      "soy-sauce",
+      "mirin",
+      "sugar",
+      "ginger"
+    ]
+  },
+  {
+    "slug": "black-bean-sauce",
+    "label": "Black bean sauce",
+    "synonyms": [
+      "black bean paste"
+    ],
+    "groups": [
+      "soya",
+      "gluten-cereals",
+      "sesame",
+      "alliums"
+    ],
+    "notes": "Usually contains fermented black soybeans, soy sauce (wheat), garlic, and sesame oil."
+  },
+  {
+    "slug": "tomato-sauce",
+    "label": "Tomato sauce",
+    "synonyms": [
+      "marinara",
+      "napoli sauce",
+      "pomodoro"
+    ],
+    "made_of": [
+      "tomato",
+      "olive-oil",
+      "garlic",
+      "onion"
+    ]
+  },
+  {
+    "slug": "passata",
+    "label": "Passata",
+    "synonyms": [
+      "sieved tomatoes"
+    ],
+    "made_of": [
+      "tomato"
+    ]
+  },
+  {
+    "slug": "tomato-puree",
+    "label": "Tomato purée",
+    "synonyms": [
+      "tomato paste"
+    ],
+    "made_of": [
+      "tomato"
+    ]
+  },
+  {
+    "slug": "pesto",
+    "label": "Pesto",
+    "synonyms": [
+      "green pesto",
+      "pesto alla genovese"
+    ],
+    "made_of": [
+      "basil",
+      "pine-nut",
+      "parmesan",
+      "garlic",
+      "olive-oil"
+    ]
+  },
+  {
+    "slug": "red-pesto",
+    "label": "Red pesto",
+    "synonyms": [
+      "pesto rosso"
+    ],
+    "made_of": [
+      "tomato",
+      "basil",
+      "pine-nut",
+      "parmesan",
+      "garlic",
+      "olive-oil"
+    ]
+  },
+  {
+    "slug": "harissa",
+    "label": "Harissa",
+    "synonyms": [
+      "harissa paste"
+    ],
+    "made_of": [
+      "chilli",
+      "garlic",
+      "olive-oil",
+      "cumin",
+      "coriander-seed"
+    ]
+  },
+  {
+    "slug": "tahini",
+    "label": "Tahini",
+    "synonyms": [
+      "tahina"
+    ],
+    "made_of": [
+      "sesame-seed",
+      "olive-oil"
+    ]
+  },
+  {
+    "slug": "hummus",
+    "label": "Hummus",
+    "synonyms": [
+      "houmous"
+    ],
+    "made_of": [
+      "chickpeas",
+      "tahini",
+      "lemon",
+      "garlic",
+      "olive-oil"
+    ]
+  },
+  {
+    "slug": "guacamole",
+    "label": "Guacamole",
+    "synonyms": [
+      "guac"
+    ],
+    "made_of": [
+      "avocado",
+      "tomato",
+      "red-onion",
+      "lime",
+      "coriander",
+      "chilli"
+    ]
+  },
+  {
+    "slug": "salsa",
+    "label": "Salsa",
+    "synonyms": [
+      "pico de gallo",
+      "tomato salsa"
+    ],
+    "made_of": [
+      "tomato",
+      "red-onion",
+      "chilli",
+      "coriander",
+      "lime"
+    ]
+  },
+  {
+    "slug": "tzatziki",
+    "label": "Tzatziki",
+    "synonyms": [
+      "cacik"
+    ],
+    "made_of": [
+      "greek-yoghurt",
+      "cucumber",
+      "garlic",
+      "mint",
+      "olive-oil",
+      "lemon"
+    ]
+  },
+  {
+    "slug": "curry-paste",
+    "label": "Curry paste",
+    "synonyms": [
+      "indian curry paste"
+    ],
+    "made_of": [
+      "chilli",
+      "garlic",
+      "ginger",
+      "coriander-seed",
+      "cumin",
+      "vegetable-oil",
+      "tomato-puree"
+    ]
+  },
+  {
+    "slug": "red-curry-paste",
+    "label": "Red curry paste",
+    "synonyms": [
+      "thai red curry paste"
+    ],
+    "made_of": [
+      "chilli",
+      "garlic",
+      "lemongrass",
+      "galangal",
+      "prawn"
+    ],
+    "notes": "Authentic Thai curry pastes typically contain shrimp paste."
+  },
+  {
+    "slug": "green-curry-paste",
+    "label": "Green curry paste",
+    "synonyms": [
+      "thai green curry paste"
+    ],
+    "made_of": [
+      "chilli",
+      "garlic",
+      "lemongrass",
+      "galangal",
+      "coriander",
+      "prawn"
+    ]
+  },
+  {
+    "slug": "yellow-curry-paste",
+    "label": "Yellow curry paste",
+    "synonyms": [
+      "thai yellow curry paste"
+    ],
+    "made_of": [
+      "chilli",
+      "garlic",
+      "lemongrass",
+      "galangal",
+      "turmeric",
+      "prawn"
+    ]
+  },
+  {
+    "slug": "garam-masala",
+    "label": "Garam masala",
+    "synonyms": [],
+    "made_of": [
+      "cumin",
+      "coriander-seed",
+      "cardamom",
+      "cinnamon",
+      "clove",
+      "black-pepper",
+      "nutmeg"
+    ]
+  },
+  {
+    "slug": "ras-el-hanout",
+    "label": "Ras el hanout",
+    "synonyms": [],
+    "made_of": [
+      "cumin",
+      "coriander-seed",
+      "cinnamon",
+      "ginger",
+      "black-pepper",
+      "turmeric"
+    ]
+  },
+  {
+    "slug": "zaatar",
+    "label": "Za'atar",
+    "synonyms": [
+      "zaatar"
+    ],
+    "made_of": [
+      "thyme",
+      "sesame-seed",
+      "oregano",
+      "salt"
+    ]
+  },
+  {
+    "slug": "chicken-stock",
+    "label": "Chicken stock",
+    "synonyms": [
+      "chicken broth",
+      "chicken bouillon"
+    ],
+    "made_of": [
+      "chicken",
+      "onion",
+      "carrot",
+      "celery"
+    ]
+  },
+  {
+    "slug": "beef-stock",
+    "label": "Beef stock",
+    "synonyms": [
+      "beef broth",
+      "beef bouillon"
+    ],
+    "made_of": [
+      "beef",
+      "onion",
+      "carrot",
+      "celery"
+    ]
+  },
+  {
+    "slug": "vegetable-stock",
+    "label": "Vegetable stock",
+    "synonyms": [
+      "vegetable broth",
+      "veg stock"
+    ],
+    "made_of": [
+      "onion",
+      "carrot",
+      "celery",
+      "leek"
+    ],
+    "notes": "Commercial stock cubes often contain hidden celery and sometimes gluten."
+  },
+  {
+    "slug": "fish-stock",
+    "label": "Fish stock",
+    "synonyms": [
+      "fish broth"
+    ],
+    "made_of": [
+      "cod",
+      "onion",
+      "celery",
+      "white-wine"
+    ]
+  },
+  {
+    "slug": "gravy",
+    "label": "Gravy",
+    "synonyms": [
+      "beef gravy"
+    ],
+    "made_of": [
+      "beef-stock",
+      "wheat-flour",
+      "butter",
+      "red-wine"
+    ]
+  },
+  {
+    "slug": "bechamel",
+    "label": "Béchamel",
+    "synonyms": [
+      "white sauce"
+    ],
+    "made_of": [
+      "butter",
+      "plain-flour",
+      "cows-milk",
+      "nutmeg"
+    ]
+  },
+  {
+    "slug": "coconut-milk",
+    "label": "Coconut milk",
+    "synonyms": [
+      "tinned coconut milk"
+    ],
+    "made_of": [
+      "coconut"
+    ]
+  },
+  {
+    "slug": "coconut-cream",
+    "label": "Coconut cream",
+    "synonyms": [
+      "creamed coconut"
+    ],
+    "made_of": [
+      "coconut"
+    ]
+  },
+  {
+    "slug": "balsamic-vinegar",
+    "label": "Balsamic vinegar",
+    "synonyms": [
+      "balsamic glaze"
+    ],
+    "groups": [
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "white-wine-vinegar",
+    "label": "White wine vinegar",
+    "synonyms": [],
+    "groups": [
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "red-wine-vinegar",
+    "label": "Red wine vinegar",
+    "synonyms": [],
+    "groups": [
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "apple-cider-vinegar",
+    "label": "Apple cider vinegar",
+    "synonyms": [
+      "cider vinegar"
+    ],
+    "groups": [
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "malt-vinegar",
+    "label": "Malt vinegar",
+    "synonyms": [
+      "chip shop vinegar"
+    ],
+    "groups": [
+      "gluten-cereals",
+      "sulphites"
+    ],
+    "notes": "Made from malted barley."
+  },
+  {
+    "slug": "mirin",
+    "label": "Mirin",
+    "synonyms": [
+      "sweet rice wine"
+    ],
+    "groups": [
+      "alcohol"
+    ]
+  },
+  {
+    "slug": "sake",
+    "label": "Sake",
+    "synonyms": [
+      "rice wine"
+    ],
+    "groups": [
+      "alcohol"
+    ]
+  },
+  {
+    "slug": "shaoxing-wine",
+    "label": "Shaoxing wine",
+    "synonyms": [
+      "chinese cooking wine"
+    ],
+    "groups": [
+      "gluten-cereals",
+      "alcohol"
+    ],
+    "notes": "Traditional Shaoxing wine contains wheat."
+  },
+  {
+    "slug": "breadcrumbs",
+    "label": "Breadcrumbs",
+    "synonyms": [
+      "fresh breadcrumbs",
+      "dried breadcrumbs"
+    ],
+    "made_of": [
+      "bread"
+    ]
+  },
+  {
+    "slug": "panko",
+    "label": "Panko breadcrumbs",
+    "synonyms": [
+      "panko"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "yeast",
+      "salt"
+    ]
+  },
+  {
+    "slug": "batter",
+    "label": "Batter",
+    "synonyms": [
+      "beer batter",
+      "fish batter"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "beer"
+    ]
+  },
+  {
+    "slug": "puff-pastry",
+    "label": "Puff pastry",
+    "synonyms": [
+      "flaky pastry"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "butter",
+      "salt"
+    ],
+    "notes": "Commercial puff pastry is often made with vegetable oils instead of butter (vegan friendly), check packaging."
+  },
+  {
+    "slug": "shortcrust-pastry",
+    "label": "Shortcrust pastry",
+    "synonyms": [
+      "pie crust"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "butter",
+      "salt"
+    ]
+  },
+  {
+    "slug": "filo-pastry",
+    "label": "Filo pastry",
+    "synonyms": [
+      "phyllo pastry"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "vegetable-oil",
+      "salt"
+    ]
+  },
+  {
+    "slug": "choux-pastry",
+    "label": "Choux pastry",
+    "synonyms": [
+      "profiterole pastry"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "butter",
+      "egg",
+      "sugar"
+    ]
+  },
+  {
+    "slug": "pasta",
+    "label": "Pasta",
+    "synonyms": [
+      "dried pasta",
+      "macaroni",
+      "penne",
+      "spaghetti"
+    ],
+    "made_of": [
+      "wheat-flour"
+    ],
+    "swap": "gluten-free-pasta"
+  },
+  {
+    "slug": "egg-pasta",
+    "label": "Egg pasta",
+    "synonyms": [
+      "fresh pasta",
+      "tagliatelle"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "egg"
+    ],
+    "swap": "gluten-free-pasta"
+  },
+  {
+    "slug": "gluten-free-pasta",
+    "label": "Gluten-Free pasta",
+    "synonyms": [
+      "gf pasta",
+      "corn pasta",
+      "rice pasta"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "noodles",
+    "label": "Noodles",
+    "synonyms": [
+      "wheat noodles",
+      "ramen noodles"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "salt"
+    ],
+    "swap": "rice-noodles"
+  },
+  {
+    "slug": "egg-noodles",
+    "label": "Egg noodles",
+    "synonyms": [
+      "chow mein noodles"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "egg",
+      "salt"
+    ],
+    "swap": "rice-noodles"
+  },
+  {
+    "slug": "rice-noodles",
+    "label": "Rice noodles",
+    "synonyms": [
+      "vermicelli",
+      "pad thai noodles"
+    ],
+    "made_of": [
+      "rice"
+    ]
+  },
+  {
+    "slug": "udon-noodles",
+    "label": "Udon noodles",
+    "synonyms": [
+      "udon"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "salt"
+    ]
+  },
+  {
+    "slug": "soba-noodles",
+    "label": "Soba noodles",
+    "synonyms": [
+      "buckwheat noodles"
+    ],
+    "groups": [
+      "gluten-cereals"
+    ],
+    "notes": "Despite being buckwheat, standard commercial soba noodles contain high ratios of wheat flour."
+  },
+  {
+    "slug": "gnocchi",
+    "label": "Gnocchi",
+    "synonyms": [
+      "potato gnocchi"
+    ],
+    "made_of": [
+      "potato",
+      "wheat-flour",
+      "egg"
+    ]
+  },
+  {
+    "slug": "pizza-dough",
+    "label": "Pizza dough",
+    "synonyms": [
+      "pizza base"
+    ],
+    "made_of": [
+      "strong-flour",
+      "yeast",
+      "salt",
+      "olive-oil"
+    ]
+  },
+  {
+    "slug": "bread",
+    "label": "Bread",
+    "synonyms": [
+      "white bread",
+      "sliced bread",
+      "toast"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "yeast",
+      "salt"
+    ]
+  },
+  {
+    "slug": "sourdough-bread",
+    "label": "Sourdough bread",
+    "synonyms": [
+      "sourdough"
+    ],
+    "made_of": [
+      "strong-flour",
+      "salt"
+    ]
+  },
+  {
+    "slug": "brioche",
+    "label": "Brioche",
+    "synonyms": [
+      "brioche loaf"
+    ],
+    "made_of": [
+      "strong-flour",
+      "butter",
+      "egg",
+      "cows-milk",
+      "sugar",
+      "yeast"
+    ],
+    "swap": "gluten-free-bun"
+  },
+  {
+    "slug": "burger-bun",
+    "label": "Burger bun",
+    "synonyms": [
+      "bap",
+      "cob",
+      "roll"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "sugar",
+      "yeast",
+      "sesame-seed",
+      "cows-milk"
+    ],
+    "swap": "gluten-free-bun"
+  },
+  {
+    "slug": "gluten-free-bun",
+    "label": "Gluten-free bun",
+    "synonyms": [
+      "gf bun"
+    ],
+    "groups": [
+      "eggs"
+    ],
+    "notes": "Commercial gluten-free buns frequently use egg as a binder."
+  },
+  {
+    "slug": "flatbread",
+    "label": "Flatbread",
+    "synonyms": [
+      "piadina"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "olive-oil",
+      "salt"
+    ]
+  },
+  {
+    "slug": "pita-bread",
+    "label": "Pitta bread",
+    "synonyms": [
+      "pita",
+      "pitta"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "yeast",
+      "salt"
+    ]
+  },
+  {
+    "slug": "naan-bread",
+    "label": "Naan bread",
+    "synonyms": [
+      "naan"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "yoghurt",
+      "yeast",
+      "butter",
+      "sugar",
+      "salt"
+    ]
+  },
+  {
+    "slug": "tortilla",
+    "label": "Tortilla",
+    "synonyms": [
+      "flour tortilla",
+      "wrap"
+    ],
+    "made_of": [
+      "wheat-flour",
+      "vegetable-oil",
+      "salt"
+    ]
+  },
+  {
+    "slug": "taco-shell",
+    "label": "Taco shell",
+    "synonyms": [
+      "hard taco",
+      "corn tortilla"
+    ],
+    "groups": [],
+    "may_contain": [
+      "gluten-cereals"
+    ],
+    "notes": "Made from corn, but often subject to severe cross-contamination in fryers."
+  },
+  {
+    "slug": "tofu",
+    "label": "Tofu",
+    "synonyms": [
+      "bean curd",
+      "silken tofu",
+      "firm tofu"
+    ],
+    "groups": [
+      "soya"
+    ]
+  },
+  {
+    "slug": "tempeh",
+    "label": "Tempeh",
+    "synonyms": [],
+    "groups": [
+      "soya"
+    ]
+  },
+  {
+    "slug": "seitan",
+    "label": "Seitan",
+    "synonyms": [
+      "wheat gluten",
+      "mock meat"
+    ],
+    "groups": [
+      "gluten-cereals"
+    ]
+  },
+  {
+    "slug": "edamame",
+    "label": "Edamame",
+    "synonyms": [
+      "edamame beans"
+    ],
+    "groups": [
+      "soya"
+    ]
+  },
+  {
+    "slug": "miso-paste",
+    "label": "Miso paste",
+    "synonyms": [
+      "white miso",
+      "red miso"
+    ],
+    "groups": [
+      "soya",
+      "gluten-cereals"
+    ],
+    "notes": "Many miso pastes are fermented with barley or wheat. Check specific brands for gluten-free certification."
+  },
+  {
+    "slug": "dashi",
+    "label": "Dashi",
+    "synonyms": [
+      "dashi powder"
+    ],
+    "groups": [
+      "fish"
+    ],
+    "notes": "Traditional Japanese dashi contains bonito flakes (fish). Kombu dashi is vegan, but standard dashi is not."
+  },
+  {
+    "slug": "gochujang",
+    "label": "Gochujang",
+    "synonyms": [
+      "korean chilli paste"
+    ],
+    "groups": [
+      "soya",
+      "gluten-cereals"
+    ],
+    "notes": "Traditionally contains fermented soybeans and glutinous rice, but commercial varieties often contain wheat."
+  },
+  {
+    "slug": "kimchi",
+    "label": "Kimchi",
+    "synonyms": [],
+    "made_of": [
+      "cabbage",
+      "chilli",
+      "garlic",
+      "ginger",
+      "fish-sauce"
+    ],
+    "notes": "Traditional kimchi contains fish sauce or salted shrimp."
+  },
+  {
+    "slug": "seaweed",
+    "label": "Seaweed",
+    "synonyms": [
+      "kombu",
+      "kelp"
+    ],
+    "groups": [],
+    "may_contain": [
+      "crustaceans",
+      "molluscs",
+      "fish"
+    ]
+  },
+  {
+    "slug": "nori",
+    "label": "Nori",
+    "synonyms": [
+      "nori sheets"
+    ],
+    "groups": [],
+    "may_contain": [
+      "crustaceans",
+      "molluscs",
+      "fish"
+    ]
+  },
+  {
+    "slug": "wakame",
+    "label": "Wakame",
+    "synonyms": [
+      "seaweed salad"
+    ],
+    "groups": [],
+    "may_contain": [
+      "crustaceans",
+      "molluscs",
+      "fish"
+    ]
+  },
+  {
+    "slug": "water-chestnut",
+    "label": "Water chestnut",
+    "synonyms": [
+      "water chestnuts"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "bamboo-shoot",
+    "label": "Bamboo shoot",
+    "synonyms": [
+      "bamboo shoots"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "beansprout",
+    "label": "Beansprout",
+    "synonyms": [
+      "beansprouts",
+      "mung bean sprouts"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "tortilla-chip",
+    "label": "Tortilla chip",
+    "synonyms": [
+      "tortilla chips",
+      "nachos"
+    ],
+    "groups": [],
+    "may_contain": [
+      "gluten-cereals"
+    ],
+    "notes": "Often subject to cross-contamination if fried in shared oil."
+  },
+  {
+    "slug": "jalapeno",
+    "label": "Jalapeño",
+    "synonyms": [
+      "jalapenos",
+      "pickled jalapenos"
+    ],
+    "groups": [
+      "nightshades"
+    ]
+  },
+  {
+    "slug": "refried-beans",
+    "label": "Refried beans",
+    "synonyms": [
+      "frijoles refritos"
+    ],
+    "made_of": [
+      "kidney-beans",
+      "onion",
+      "garlic",
+      "vegetable-oil"
+    ],
+    "notes": "Traditional Mexican recipes may use lard (pork fat) instead of vegetable oil."
+  },
+  {
+    "slug": "black-beans",
+    "label": "Black beans",
+    "synonyms": [
+      "turtle beans"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "kidney-beans",
+    "label": "Kidney beans",
+    "synonyms": [
+      "red kidney beans"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "chickpeas",
+    "label": "Chickpeas",
+    "synonyms": [
+      "garbanzo beans"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "lentils",
+    "label": "Lentils",
+    "synonyms": [
+      "red lentils",
+      "green lentils",
+      "puy lentils"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "sugar",
+    "label": "Sugar",
+    "synonyms": [
+      "granulated sugar",
+      "white sugar"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "brown-sugar",
+    "label": "Brown sugar",
+    "synonyms": [
+      "light brown sugar",
+      "dark brown sugar",
+      "demerara"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "caster-sugar",
+    "label": "Caster sugar",
+    "synonyms": [
+      "castor sugar",
+      "superfine sugar"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "icing-sugar",
+    "label": "Icing sugar",
+    "synonyms": [
+      "powdered sugar",
+      "confectioners sugar"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "honey",
+    "label": "Honey",
+    "synonyms": [
+      "runny honey",
+      "set honey"
+    ],
+    "groups": [
+      "animal-derived"
+    ]
+  },
+  {
+    "slug": "maple-syrup",
+    "label": "Maple syrup",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "agave-syrup",
+    "label": "Agave syrup",
+    "synonyms": [
+      "agave nectar"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "golden-syrup",
+    "label": "Golden syrup",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "vanilla-extract",
+    "label": "Vanilla extract",
+    "synonyms": [
+      "vanilla essence",
+      "vanilla paste"
+    ],
+    "groups": [],
+    "notes": "Real vanilla extract contains a significant alcohol base."
+  },
+  {
+    "slug": "chocolate",
+    "label": "Chocolate",
+    "synonyms": [
+      "cooking chocolate"
+    ],
+    "groups": [
+      "milk",
+      "soya",
+      "caffeine"
+    ],
+    "may_contain": [
+      "tree-nuts",
+      "peanuts"
+    ]
+  },
+  {
+    "slug": "dark-chocolate",
+    "label": "Dark chocolate",
+    "synonyms": [
+      "plain chocolate"
+    ],
+    "groups": [
+      "soya",
+      "caffeine"
+    ],
+    "may_contain": [
+      "milk",
+      "tree-nuts",
+      "peanuts"
+    ],
+    "notes": "Most dark chocolate has cross-contamination warnings for milk."
+  },
+  {
+    "slug": "milk-chocolate",
+    "label": "Milk chocolate",
+    "synonyms": [],
+    "groups": [
+      "milk",
+      "lactose",
+      "soya",
+      "caffeine"
+    ],
+    "may_contain": [
+      "tree-nuts",
+      "peanuts"
+    ]
+  },
+  {
+    "slug": "white-chocolate",
+    "label": "White chocolate",
+    "synonyms": [],
+    "groups": [
+      "milk",
+      "lactose",
+      "soya"
+    ],
+    "may_contain": [
+      "tree-nuts",
+      "peanuts"
+    ]
+  },
+  {
+    "slug": "cocoa-powder",
+    "label": "Cocoa powder",
+    "synonyms": [
+      "cacao powder"
+    ],
+    "groups": [
+      "caffeine"
+    ]
+  },
+  {
+    "slug": "gelatine",
+    "label": "Gelatine",
+    "synonyms": [
+      "gelatin",
+      "gelatine leaves"
+    ],
+    "groups": [
+      "animal-derived",
+      "beef",
+      "pork"
+    ]
+  },
+  {
+    "slug": "agar-agar",
+    "label": "Agar-Agar",
+    "synonyms": [
+      "agar flakes"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "pectin",
+    "label": "Pectin",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "xanthan-gum",
+    "label": "Xanthan gum",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "citric-acid",
+    "label": "Citric acid",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "yeast",
+    "label": "Yeast",
+    "synonyms": [
+      "fresh yeast",
+      "dried yeast",
+      "active dry yeast"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "baking-powder",
+    "label": "Baking powder",
+    "synonyms": [],
+    "groups": [],
+    "may_contain": [
+      "gluten-cereals"
+    ],
+    "notes": "Some cheap baking powders use wheat starch as a bulking agent. Check for gluten-free certification."
+  },
+  {
+    "slug": "baking-soda",
+    "label": "Baking soda",
+    "synonyms": [
+      "bicarbonate of soda",
+      "bicarb"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "rose-water",
+    "label": "Rose water",
+    "synonyms": [
+      "rosewater"
+    ],
+    "groups": []
+  },
+  {
+    "slug": "orange-blossom-water",
+    "label": "Orange blossom water",
+    "synonyms": [],
+    "groups": []
+  },
+  {
+    "slug": "ice-cream",
+    "label": "Ice cream",
+    "synonyms": [
+      "dairy ice cream"
+    ],
+    "made_of": [
+      "cows-milk",
+      "cream",
+      "sugar"
+    ]
+  },
+  {
+    "slug": "vanilla-ice-cream",
+    "label": "Vanilla ice cream",
+    "synonyms": [],
+    "made_of": [
+      "ice-cream",
+      "vanilla-extract"
+    ]
+  },
+  {
+    "slug": "sorbet",
+    "label": "Sorbet",
+    "synonyms": [
+      "lemon sorbet"
+    ],
+    "made_of": [
+      "sugar",
+      "lemon"
+    ]
+  },
+  {
+    "slug": "custard",
+    "label": "Custard",
+    "synonyms": [
+      "creme anglaise"
+    ],
+    "made_of": [
+      "cows-milk",
+      "cream",
+      "egg-yolk",
+      "sugar",
+      "vanilla-extract"
+    ]
+  },
+  {
+    "slug": "jam",
+    "label": "Jam",
+    "synonyms": [
+      "strawberry jam",
+      "conserve"
+    ],
+    "made_of": [
+      "strawberry",
+      "sugar",
+      "pectin"
+    ]
+  },
+  {
+    "slug": "marmalade",
+    "label": "Marmalade",
+    "synonyms": [
+      "orange marmalade"
+    ],
+    "made_of": [
+      "orange",
+      "sugar",
+      "pectin"
+    ]
+  },
+  {
+    "slug": "peanut-butter",
+    "label": "Peanut butter",
+    "synonyms": [
+      "smooth peanut butter",
+      "crunchy peanut butter"
+    ],
+    "made_of": [
+      "peanut",
+      "vegetable-oil",
+      "salt"
+    ]
+  },
+  {
+    "slug": "almond-butter",
+    "label": "Almond butter",
+    "synonyms": [],
+    "made_of": [
+      "almond",
+      "vegetable-oil",
+      "salt"
+    ]
+  },
+  {
+    "slug": "coffee",
+    "label": "Coffee",
+    "synonyms": [
+      "filter coffee",
+      "instant coffee",
+      "coffee beans"
+    ],
+    "groups": [
+      "caffeine"
+    ]
+  },
+  {
+    "slug": "espresso",
+    "label": "Espresso",
+    "synonyms": [],
+    "made_of": [
+      "coffee"
+    ]
+  },
+  {
+    "slug": "tea",
+    "label": "Tea",
+    "synonyms": [
+      "black tea",
+      "english breakfast"
+    ],
+    "groups": [
+      "caffeine"
+    ]
+  },
+  {
+    "slug": "green-tea",
+    "label": "Green tea",
+    "synonyms": [],
+    "groups": [
+      "caffeine"
+    ]
+  },
+  {
+    "slug": "matcha",
+    "label": "Matcha",
+    "synonyms": [],
+    "groups": [
+      "caffeine"
+    ]
+  },
+  {
+    "slug": "matcha-powder",
+    "label": "Matcha powder",
+    "synonyms": [],
+    "groups": [
+      "caffeine"
+    ]
+  },
+  {
+    "slug": "wine",
+    "label": "Wine",
+    "synonyms": [
+      "cooking wine"
+    ],
+    "groups": [
+      "alcohol",
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "red-wine",
+    "label": "Red wine",
+    "synonyms": [],
+    "made_of": [
+      "wine"
+    ]
+  },
+  {
+    "slug": "white-wine",
+    "label": "White wine",
+    "synonyms": [],
+    "made_of": [
+      "wine"
+    ]
+  },
+  {
+    "slug": "beer",
+    "label": "Beer",
+    "synonyms": [
+      "lager"
+    ],
+    "groups": [
+      "alcohol",
+      "gluten-cereals"
+    ],
+    "notes": "Beer is typically brewed from malted barley or wheat."
+  },
+  {
+    "slug": "ale",
+    "label": "Ale",
+    "synonyms": [
+      "bitter",
+      "stout",
+      "ipa"
+    ],
+    "made_of": [
+      "beer"
+    ]
+  },
+  {
+    "slug": "cider",
+    "label": "Cider",
+    "synonyms": [
+      "hard cider",
+      "apple cider"
+    ],
+    "groups": [
+      "alcohol",
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "vodka",
+    "label": "Vodka",
+    "synonyms": [],
+    "groups": [
+      "alcohol"
+    ]
+  },
+  {
+    "slug": "gin",
+    "label": "Gin",
+    "synonyms": [],
+    "groups": [
+      "alcohol"
+    ]
+  },
+  {
+    "slug": "rum",
+    "label": "Rum",
+    "synonyms": [
+      "white rum",
+      "dark rum",
+      "spiced rum"
+    ],
+    "groups": [
+      "alcohol"
+    ]
+  },
+  {
+    "slug": "whiskey",
+    "label": "Whiskey",
+    "synonyms": [
+      "whisky",
+      "scotch",
+      "bourbon"
+    ],
+    "groups": [
+      "alcohol"
+    ]
+  },
+  {
+    "slug": "brandy",
+    "label": "Brandy",
+    "synonyms": [
+      "cognac",
+      "armagnac"
+    ],
+    "groups": [
+      "alcohol",
+      "sulphites"
+    ]
+  },
+  {
+    "slug": "liqueur",
+    "label": "Liqueur",
+    "synonyms": [
+      "coffee liqueur",
+      "orange liqueur"
+    ],
+    "groups": [
+      "alcohol"
+    ]
+  },
+  {
+    "slug": "amaretto",
+    "label": "Amaretto",
+    "synonyms": [
+      "almond liqueur"
+    ],
+    "groups": [
+      "alcohol",
+      "tree-nuts"
+    ],
+    "notes": "Traditional amaretto is made from apricot kernels and almonds, making it a tree-nut allergen risk."
+  },
+  {
+    "slug": "oat-milk",
+    "label": "Oat milk",
+    "synonyms": [
+      "oat drink"
+    ],
+    "groups": [],
+    "may_contain": [
+      "gluten-cereals"
+    ],
+    "notes": "Oat drinks are only gluten-free if made from certified gluten-free oats."
+  }
 ]

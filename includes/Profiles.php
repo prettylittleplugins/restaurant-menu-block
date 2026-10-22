@@ -23,10 +23,13 @@ final class Profiles {
 		return $profiles;
 	}
 
-	/** Shipped defaults, read from data/profiles.json. */
+	/** Shipped defaults, read from data/profiles.json (a list), re-keyed by slug. */
 	public static function defaults(): array {
 		$json = file_get_contents( PRETTYLP_RMB_DIR . 'data/profiles.json' ); // phpcs:ignore WordPress.WP.AlternativeFunctions
 		$data = json_decode( (string) $json, true );
-		return is_array( $data ) ? $data : [];
+		if ( ! is_array( $data ) ) {
+			return [];
+		}
+		return array_column( $data, null, 'slug' );
 	}
 }

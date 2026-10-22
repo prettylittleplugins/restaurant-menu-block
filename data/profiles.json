@@ -1,4 +1,173 @@
-{
-	"coeliac": { "name": "Coeliac", "exclude": [ "gluten" ], "medical": true, "badge": "" },
-	"dairy-free": { "name": "Dairy-free", "exclude": [ "milk" ], "medical": true, "badge": "" }
-}
+[
+  {
+    "slug": "coeliac",
+    "label": "Coeliac",
+    "excluded_groups": [
+      "gluten-cereals"
+    ],
+    "hide_may_contain": true,
+    "badge": null,
+    "notes": "Medical profile. Hides items with a cross-contamination risk for gluten."
+  },
+  {
+    "slug": "gluten-free",
+    "label": "Gluten-free (non-coeliac)",
+    "excluded_groups": [
+      "gluten-cereals"
+    ],
+    "hide_may_contain": false,
+    "badge": null,
+    "notes": "Lifestyle profile. Excludes explicit gluten but allows 'may contain' risks."
+  },
+  {
+    "slug": "vegetarian",
+    "label": "Vegetarian",
+    "excluded_groups": [
+      "meat",
+      "poultry",
+      "pork",
+      "beef",
+      "lamb",
+      "game",
+      "fish",
+      "crustaceans",
+      "molluscs",
+      "shellfish"
+    ],
+    "hide_may_contain": false,
+    "badge": "V",
+    "notes": null
+  },
+  {
+    "slug": "vegan",
+    "label": "Vegan",
+    "excluded_groups": [
+      "meat",
+      "poultry",
+      "pork",
+      "beef",
+      "lamb",
+      "game",
+      "fish",
+      "crustaceans",
+      "molluscs",
+      "shellfish",
+      "animal-derived",
+      "eggs",
+      "milk"
+    ],
+    "hide_may_contain": false,
+    "badge": "VE",
+    "notes": null
+  },
+  {
+    "slug": "pescatarian",
+    "label": "Pescatarian",
+    "excluded_groups": [
+      "meat",
+      "poultry",
+      "pork",
+      "beef",
+      "lamb",
+      "game"
+    ],
+    "hide_may_contain": false,
+    "badge": "P",
+    "notes": null
+  },
+  {
+    "slug": "halal",
+    "label": "Halal",
+    "excluded_groups": [
+      "pork",
+      "alcohol"
+    ],
+    "hide_may_contain": false,
+    "badge": null,
+    "notes": "This profile only filters out explicitly non-halal ingredients (pork and alcohol). True Halal compliance requires an explicit certification checkbox on the meat sourced by the restaurant, which cannot be derived purely from ingredient names."
+  },
+  {
+    "slug": "kosher",
+    "label": "Kosher",
+    "excluded_groups": [
+      "pork",
+      "crustaceans",
+      "molluscs",
+      "shellfish"
+    ],
+    "hide_may_contain": false,
+    "badge": null,
+    "notes": "Filters out inherent non-kosher items like pork and shellfish. It cannot express the prohibition of mixing meat and dairy in the same dish, nor can it verify kosher slaughter certification."
+  },
+  {
+    "slug": "dairy-free",
+    "label": "Dairy-free (milk allergy)",
+    "excluded_groups": [
+      "milk"
+    ],
+    "hide_may_contain": true,
+    "badge": null,
+    "notes": "Medical profile. Excludes the legal 'milk' allergen and hides cross-contamination risks."
+  },
+  {
+    "slug": "lactose-intolerant",
+    "label": "Lactose intolerant",
+    "excluded_groups": [
+      "lactose"
+    ],
+    "hide_may_contain": false,
+    "badge": null,
+    "notes": "Excludes the 'lactose' group (e.g., milk, cream, soft cheeses) but permits hard cheeses and butter, which belong to the 'milk' allergen group but contain negligible lactose."
+  },
+  {
+    "slug": "nut-free",
+    "label": "Nut-free",
+    "excluded_groups": [
+      "peanuts",
+      "tree-nuts"
+    ],
+    "hide_may_contain": true,
+    "badge": null,
+    "notes": "Medical profile covering both peanuts and tree nuts, hiding cross-contamination risks."
+  },
+  {
+    "slug": "egg-free",
+    "label": "Egg-free",
+    "excluded_groups": [
+      "eggs"
+    ],
+    "hide_may_contain": true,
+    "badge": null,
+    "notes": null
+  },
+  {
+    "slug": "soya-free",
+    "label": "Soya-free",
+    "excluded_groups": [
+      "soya"
+    ],
+    "hide_may_contain": true,
+    "badge": null,
+    "notes": null
+  },
+  {
+    "slug": "low-fodmap",
+    "label": "Low-FODMAP (onion/garlic)",
+    "excluded_groups": [
+      "alliums"
+    ],
+    "hide_may_contain": false,
+    "badge": null,
+    "notes": "Specifically targets the alliums group (onions, garlic, leeks, shallots)."
+  },
+  {
+    "slug": "no-alcohol",
+    "label": "No alcohol",
+    "excluded_groups": [
+      "alcohol"
+    ],
+    "hide_may_contain": false,
+    "badge": null,
+    "notes": null
+  }
+]

@@ -1,16 +1,184 @@
 [
-	{ "slug": "gluten", "name": "Cereals containing gluten", "type": "allergen", "order": 1 },
-	{ "slug": "crustaceans", "name": "Crustaceans", "type": "allergen", "order": 2 },
-	{ "slug": "egg", "name": "Eggs", "type": "allergen", "order": 3 },
-	{ "slug": "fish", "name": "Fish", "type": "allergen", "order": 4 },
-	{ "slug": "peanuts", "name": "Peanuts", "type": "allergen", "order": 5 },
-	{ "slug": "soya", "name": "Soybeans", "type": "allergen", "order": 6 },
-	{ "slug": "milk", "name": "Milk", "type": "allergen", "order": 7 },
-	{ "slug": "nuts", "name": "Tree nuts", "type": "allergen", "order": 8 },
-	{ "slug": "celery", "name": "Celery", "type": "allergen", "order": 9 },
-	{ "slug": "mustard", "name": "Mustard", "type": "allergen", "order": 10 },
-	{ "slug": "sesame", "name": "Sesame", "type": "allergen", "order": 11 },
-	{ "slug": "sulphites", "name": "Sulphur dioxide and sulphites", "type": "allergen", "order": 12 },
-	{ "slug": "lupin", "name": "Lupin", "type": "allergen", "order": 13 },
-	{ "slug": "molluscs", "name": "Molluscs", "type": "allergen", "order": 14 }
+  {
+    "slug": "gluten-cereals",
+    "label": "Cereals containing gluten",
+    "type": "legal",
+    "sort_order": 1,
+    "notes": "Wheat (such as spelt and khorasan wheat), rye, barley, oats or their hybridised strains."
+  },
+  {
+    "slug": "crustaceans",
+    "label": "Crustaceans",
+    "type": "legal",
+    "sort_order": 2,
+    "notes": "Crabs, lobster, prawns, scampi, etc."
+  },
+  {
+    "slug": "eggs",
+    "label": "Eggs",
+    "type": "legal",
+    "sort_order": 3
+  },
+  {
+    "slug": "fish",
+    "label": "Fish",
+    "type": "legal",
+    "sort_order": 4
+  },
+  {
+    "slug": "peanuts",
+    "label": "Peanuts",
+    "type": "legal",
+    "sort_order": 5,
+    "notes": "Also known as groundnuts. Distinct from tree nuts."
+  },
+  {
+    "slug": "soya",
+    "label": "Soya",
+    "type": "legal",
+    "sort_order": 6,
+    "notes": "Soya beans, edamame, tofu, soy sauce."
+  },
+  {
+    "slug": "milk",
+    "label": "Milk",
+    "type": "legal",
+    "sort_order": 7,
+    "notes": "Cow, sheep, and goat milk protein. UK FIC legal requirement."
+  },
+  {
+    "slug": "tree-nuts",
+    "label": "Tree nuts",
+    "type": "legal",
+    "sort_order": 8,
+    "notes": "Almonds, hazelnuts, walnuts, cashews, pecan nuts, Brazil nuts, pistachio nuts, macadamia (or Queensland) nuts."
+  },
+  {
+    "slug": "celery",
+    "label": "Celery",
+    "type": "legal",
+    "sort_order": 9,
+    "notes": "Includes celery stalks, leaves, seeds and the root called celeriac."
+  },
+  {
+    "slug": "mustard",
+    "label": "Mustard",
+    "type": "legal",
+    "sort_order": 10,
+    "notes": "Liquid mustard, mustard powder and mustard seeds."
+  },
+  {
+    "slug": "sesame",
+    "label": "Sesame",
+    "type": "legal",
+    "sort_order": 11,
+    "notes": "Sesame seeds, tahini, hummous, sesame oil."
+  },
+  {
+    "slug": "sulphites",
+    "label": "Sulphur dioxide / Sulphites",
+    "type": "legal",
+    "sort_order": 12,
+    "notes": "Where added and at a level above 10mg/kg or 10mg/L in the finished product."
+  },
+  {
+    "slug": "lupin",
+    "label": "Lupin",
+    "type": "legal",
+    "sort_order": 13,
+    "notes": "Lupin seeds and flour, sometimes found in certain types of bread, pastries, and pasta."
+  },
+  {
+    "slug": "molluscs",
+    "label": "Molluscs",
+    "type": "legal",
+    "sort_order": 14,
+    "notes": "Mussels, land snails, squid, whelks, oysters."
+  },
+  {
+    "slug": "lactose",
+    "label": "Lactose",
+    "type": "intolerance",
+    "sort_order": 15,
+    "notes": "Distinct from milk allergy. Hard cheeses usually contain trace amounts, whereas soft dairy contains higher levels."
+  },
+  {
+    "slug": "alliums",
+    "label": "Alliums (Onion/Garlic)",
+    "type": "intolerance",
+    "sort_order": 16,
+    "notes": "High-FODMAP triggers: onions, garlic, leeks, shallots."
+  },
+  {
+    "slug": "nightshades",
+    "label": "Nightshades",
+    "type": "intolerance",
+    "sort_order": 17,
+    "notes": "Tomatoes, potatoes, aubergines, peppers, chillies."
+  },
+  {
+    "slug": "caffeine",
+    "label": "Caffeine",
+    "type": "intolerance",
+    "sort_order": 18
+  },
+  {
+    "slug": "meat",
+    "label": "Meat",
+    "type": "choice",
+    "sort_order": 19,
+    "notes": "All mammalian meat. Does not include poultry."
+  },
+  {
+    "slug": "poultry",
+    "label": "Poultry",
+    "type": "choice",
+    "sort_order": 20,
+    "notes": "Chicken, turkey, duck."
+  },
+  {
+    "slug": "pork",
+    "label": "Pork",
+    "type": "choice",
+    "sort_order": 21
+  },
+  {
+    "slug": "beef",
+    "label": "Beef",
+    "type": "choice",
+    "sort_order": 22
+  },
+  {
+    "slug": "lamb",
+    "label": "Lamb",
+    "type": "choice",
+    "sort_order": 23
+  },
+  {
+    "slug": "game",
+    "label": "Game",
+    "type": "choice",
+    "sort_order": 24,
+    "notes": "Venison, rabbit, pheasant, etc."
+  },
+  {
+    "slug": "shellfish",
+    "label": "Shellfish",
+    "type": "choice",
+    "sort_order": 25,
+    "notes": "Dietary combination of Crustaceans and Molluscs."
+  },
+  {
+    "slug": "animal-derived",
+    "label": "Animal-derived",
+    "type": "choice",
+    "sort_order": 26,
+    "notes": "Gelatine, honey, rennet, cochineal, isinglass. Excludes direct meat/fish/egg/dairy."
+  },
+  {
+    "slug": "alcohol",
+    "label": "Alcohol",
+    "type": "choice",
+    "sort_order": 27
+  }
 ]
